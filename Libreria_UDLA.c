@@ -1,4 +1,3 @@
-// S11 Romina-Gomez Hugo-Yepez
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -32,13 +31,13 @@ int LeerEnteroPositivo(const char *msg)
             continue;
         if (strchr(buf, '.') || strchr(buf, ','))
         {
-            puts(" No Se Permiten Decimales...Intenta Nuevamente ");
+            puts(" -No Se Permiten Decimales...Intenta Nuevamente- ");
             continue;
         }
         int num;
         if (sscanf(buf, "%d", &num) == 1 && num >= 1)
             return num;
-        puts(" No Se Pueden Agregar Letras Ni Numeros Negativos...Intenta Nuevamente ");
+        puts(" -No Se Pueden Agregar Letras Ni Numeros Negativos...Intenta Nuevamente- ");
     } while (1);
 }
 void LeerTexto(const char *msg, char *dts, int max)
