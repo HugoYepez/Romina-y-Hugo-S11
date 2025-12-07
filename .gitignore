@@ -4,8 +4,8 @@
 # Object files
 *.o
 *.ko
-*.obJ
-*.elF
+*.obj
+*.elf
 
 # Linker output
 *.ilk
@@ -53,4 +53,3 @@ dkms.conf
 
 # debug information files
 *.dwo
-.vscode/
